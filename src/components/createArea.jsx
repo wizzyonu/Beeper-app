@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddIcon from "@mui/icons-material/Add";
 
 function CreateArea(props) {
   const [inputText, setInputText] = useState({
@@ -40,7 +41,9 @@ function CreateArea(props) {
           onChange={handleChange}
           value={inputText.content}
         />
-        <button onClick={submit}>Add</button>
+        <button onClick={submit}>
+            <AddIcon />
+        </button>
       </form>
     </div>
   );
