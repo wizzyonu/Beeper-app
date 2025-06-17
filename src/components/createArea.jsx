@@ -33,19 +33,19 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form>
-        {pensi && <input
+      <form className="create-note">
+        {pensi && (<input
         
         name="title"
         placeholder="Title"
         onChange={handleChange}
         value={inputText.title}
-      />}
+      />)}
         <textarea
           onClick = {peno}
           name="content"
           placeholder="Take a note..."
-          rows= {pensi ? "3" : "1"}
+          rows= {pensi ? 3 : 1}
           onChange={handleChange}
           value={inputText.content}
         />
